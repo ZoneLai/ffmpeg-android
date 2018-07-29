@@ -39,6 +39,7 @@ public class MainActivity extends BaseActivity {
             public void onClick(View arg0) {
                 String folderurl = Environment.getExternalStorageDirectory().getPath();
                 String urltext_input = mEditText.getText().toString();
+                // 根据实际视频文件路径选择
                 final String filePath = folderurl + "/com.uni.pano/" + urltext_input;
                 new Thread(new Runnable() {
                     @Override
